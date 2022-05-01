@@ -2,7 +2,7 @@
 Type=Application
 Name=@PROJECT_NAME@
 GenericName=@PROJECT_NAME@
-Comment=Application
+Comment=rlxos Welcome tour
 Icon=@APP_ID@
 StartupNotify=true
 Exec=@PROJECT_NAME@
