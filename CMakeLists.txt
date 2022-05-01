@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.10)
 
 project(welcome-tour VERSION 1.0)
 
-set(APP_ID "dev.rlxos.WeclomeTour")
+set(APP_ID "dev.rlxos.WelcomeTour")
 string(REPLACE "." "/" APP_PREFIX "/${APP_ID}/")
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake")
