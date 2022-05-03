@@ -27,6 +27,7 @@
                 <property name="icon_name">start-here-symbolic</property>
                 <property name="title" translatable="yes">Welcome to rlxos GNU/Linux</property>
                 <property name="description" translatable="yes">Learn about the key features for rlxos 2204. 
+
 Swipe to continue</property>
                 <child>
                   <placeholder/>
@@ -75,7 +76,7 @@ Swipe to continue</property>
                       <object class="GtkLabel">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="label" translatable="yes">Primay focus of rlxos GNU/Linux 2204 is provide the most stable and trustable OS</property>
+                        <property name="label" translatable="yes">Our primay focus is to make rlxos the most stable and trustable OS</property>
                         <style>
                           <class name="body"/>
                         </style>
@@ -149,6 +150,7 @@ Swipe to continue</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
+                        <property name="halign">center</property>
                         <property name="relief">none</property>
                         <property name="uri">https://docs.rlxos.dev</property>
                       </object>
@@ -204,7 +206,9 @@ Swipe to continue</property>
                       <object class="GtkLabel">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="label" translatable="yes">Press  &lt;super&gt; key and start typing...</property>
+                        <property name="label" translatable="yes">Talk directly to your apps, 
+Try press ⌘ and type '25+44'</property>
+                        <property name="justify">center</property>
                         <style>
                           <class name="body"/>
                         </style>
@@ -407,8 +411,7 @@ Swipe to continue</property>
                       <object class="GtkLabel">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="label" translatable="yes">Are we stopping here, absoutely not.
-Checkout our plans and raise your ideas at our github organisation</property>
+                        <property name="label" translatable="yes">Checkout our plans and raise your ideas at our github organisation</property>
                         <property name="justify">center</property>
                         <style>
                           <class name="body"/>
@@ -556,7 +559,7 @@ Checkout our plans and raise your ideas at our github organisation</property>
                       <object class="GtkLabel">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="label" translatable="yes">You can support us with time, knowledge, translations, mirrors and ideas to support our growth</property>
+                        <property name="label" translatable="yes">Finishing up post installation tasks, Press 'Finish' to end tour</property>
                         <property name="justify">center</property>
                         <style>
                           <class name="body"/>
