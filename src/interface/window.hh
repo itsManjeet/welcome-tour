@@ -8,7 +8,6 @@ class Window : public Gtk::ApplicationWindow {
  private:
   Glib::RefPtr<Gtk::Builder> m_Builder;
   Glib::RefPtr<Gio::Settings> m_Settings;
-  Gtk::HeaderBar* m_HeaderBar;
   Gtk::Button* m_FinishBtn;
 
  public:

@@ -11,6 +11,10 @@ auto const STYLE_DATA = R"(
     font-size: 18px;
     font-weight: 400;
 }
+
+.comment {
+    font-style: italic;
+}
 )";
 
 #endif

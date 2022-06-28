@@ -3,17 +3,16 @@
 <interface>
   <requires lib="gtk+" version="3.22"/>
   <requires lib="libhandy" version="0.0"/>
-  <object class="GtkApplicationWindow" id="main_window">
+  <object class="HdyWindow" id="main_window">
     <property name="can_focus">False</property>
     <property name="resizable">False</property>
-    <property name="window_position">center-always</property>
-    <property name="default_width">1024</property>
-    <property name="default_height">728</property>
+    <property name="window_position">center-on-parent</property>
+    <property name="default_width">800</property>
+    <property name="default_height">600</property>
     <child>
-      <object class="GtkBox">
+      <object class="HdyWindowHandle">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
-        <property name="orientation">vertical</property>
         <child>
           <object class="HdyCarousel" id="main_carousel">
             <property name="visible">True</property>
@@ -26,11 +25,17 @@
                 <property name="vexpand">True</property>
                 <property name="icon_name">start-here-symbolic</property>
                 <property name="title" translatable="yes">Welcome to rlxos GNU/Linux</property>
-                <property name="description" translatable="yes">Learn about the key features for rlxos 2204. 
-
-Swipe to continue</property>
+                <property name="description" translatable="yes">Learn about the key features for rlxos 2204.</property>
                 <child>
-                  <placeholder/>
+                  <object class="GtkLabel">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="margin_top">20</property>
+                    <property name="label" translatable="yes">Swipe to continue </property>
+                    <style>
+                      <class name="comment"/>
+                    </style>
+                  </object>
                 </child>
               </object>
             </child>
@@ -48,6 +53,8 @@ Swipe to continue</property>
                       <object class="GtkImage">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
+                        <property name="pixel_size">128</property>
+                        <property name="icon_name">preferences-system-symbolic</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -59,7 +66,7 @@ Swipe to continue</property>
                       <object class="GtkLabel">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="margin_top">35</property>
+                        <property name="margin_top">58</property>
                         <property name="margin_bottom">5</property>
                         <property name="label" translatable="yes">More Stable</property>
                         <style>
@@ -105,6 +112,8 @@ Swipe to continue</property>
                       <object class="GtkImage">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
+                        <property name="pixel_size">128</property>
+                        <property name="icon_name">applications-games-symbolic</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -116,7 +125,7 @@ Swipe to continue</property>
                       <object class="GtkLabel">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="margin_top">35</property>
+                        <property name="margin_top">28</property>
                         <property name="margin_bottom">5</property>
                         <property name="label" translatable="yes">Easy to use</property>
                         <style>
@@ -152,7 +161,7 @@ Swipe to continue</property>
                         <property name="receives_default">True</property>
                         <property name="halign">center</property>
                         <property name="relief">none</property>
-                        <property name="uri">https://docs.rlxos.dev</property>
+                        <property name="uri">https://docs.rlxos.dev/</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -178,6 +187,8 @@ Swipe to continue</property>
                       <object class="GtkImage">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
+                        <property name="pixel_size">128</property>
+                        <property name="icon_name">thunderbolt-symbolic</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -189,7 +200,7 @@ Swipe to continue</property>
                       <object class="GtkLabel">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="margin_top">35</property>
+                        <property name="margin_top">28</property>
                         <property name="margin_bottom">5</property>
                         <property name="label" translatable="yes">Boost your prodictivity</property>
                         <style>
@@ -237,6 +248,8 @@ Try press ⌘ and type '25+44'</property>
                       <object class="GtkImage">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
+                        <property name="pixel_size">128</property>
+                        <property name="icon_name">discord-symbolic</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -248,7 +261,7 @@ Try press ⌘ and type '25+44'</property>
                       <object class="GtkLabel">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="margin_top">35</property>
+                        <property name="margin_top">28</property>
                         <property name="margin_bottom">5</property>
                         <property name="label" translatable="yes">Join the family</property>
                         <style>
@@ -310,6 +323,8 @@ Try press ⌘ and type '25+44'</property>
                       <object class="GtkImage">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
+                        <property name="pixel_size">128</property>
+                        <property name="icon_name">youtube</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -321,7 +336,7 @@ Try press ⌘ and type '25+44'</property>
                       <object class="GtkLabel">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="margin_top">35</property>
+                        <property name="margin_top">28</property>
                         <property name="margin_bottom">5</property>
                         <property name="label" translatable="yes">Checkout our Youtube channel</property>
                         <style>
@@ -383,6 +398,8 @@ Try press ⌘ and type '25+44'</property>
                       <object class="GtkImage">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
+                        <property name="pixel_size">118</property>
+                        <property name="icon_name">github</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -394,7 +411,7 @@ Try press ⌘ and type '25+44'</property>
                       <object class="GtkLabel">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="margin_top">35</property>
+                        <property name="margin_top">28</property>
                         <property name="margin_bottom">5</property>
                         <property name="label" translatable="yes">What's Next!</property>
                         <style>
@@ -431,7 +448,7 @@ Try press ⌘ and type '25+44'</property>
                         <property name="receives_default">True</property>
                         <property name="halign">center</property>
                         <property name="relief">none</property>
-                        <property name="uri">https://github.com/rlxos</property>
+                        <property name="uri">https://github.com/itsmanjeet/rlxos</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -457,6 +474,8 @@ Try press ⌘ and type '25+44'</property>
                       <object class="GtkImage">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
+                        <property name="pixel_size">128</property>
+                        <property name="icon_name">help-donate</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -468,7 +487,7 @@ Try press ⌘ and type '25+44'</property>
                       <object class="GtkLabel">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="margin_top">35</property>
+                        <property name="margin_top">28</property>
                         <property name="margin_bottom">5</property>
                         <property name="label" translatable="yes">Donation</property>
                         <style>
@@ -505,7 +524,7 @@ Try press ⌘ and type '25+44'</property>
                         <property name="receives_default">True</property>
                         <property name="halign">center</property>
                         <property name="relief">none</property>
-                        <property name="uri">https://rlxos.dev/donate</property>
+                        <property name="uri">https://github.com/sponsors/itsManjeet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -531,6 +550,8 @@ Try press ⌘ and type '25+44'</property>
                       <object class="GtkImage">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
+                        <property name="pixel_size">128</property>
+                        <property name="icon_name">start-here-symbolic</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -542,7 +563,7 @@ Try press ⌘ and type '25+44'</property>
                       <object class="GtkLabel">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="margin_top">35</property>
+                        <property name="margin_top">28</property>
                         <property name="margin_bottom">5</property>
                         <property name="label" translatable="yes">Enjoy!</property>
                         <style>
@@ -581,6 +602,7 @@ Try press ⌘ and type '25+44'</property>
                         <property name="margin_top">13</property>
                         <style>
                           <class name="suggested-action"/>
+                          <class name="circular"/>
                         </style>
                       </object>
                       <packing>
@@ -593,24 +615,6 @@ Try press ⌘ and type '25+44'</property>
                 </child>
               </object>
             </child>
-          </object>
-          <packing>
-            <property name="expand">True</property>
-            <property name="fill">True</property>
-            <property name="position">0</property>
-          </packing>
-        </child>
-      </object>
-    </child>
-    <child type="titlebar">
-      <object class="GtkHeaderBar" id="header_bar">
-        <property name="visible">True</property>
-        <property name="can_focus">False</property>
-        <child type="title">
-          <object class="HdyCarouselIndicatorDots">
-            <property name="visible">True</property>
-            <property name="can_focus">False</property>
-            <property name="carousel">main_carousel</property>
           </object>
         </child>
       </object>
